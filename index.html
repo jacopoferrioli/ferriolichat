@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferrioli.eu - Gestionale</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Navbar verrà inserita dinamicamente via JS -->
+        <div id="navbar"></div>
+        
+        <!-- Contenuto principale -->
+        <main id="main-content">
+            <!-- Pagina verrà caricata dinamicamente -->
+            <div id="page-content"></div>
+        </main>
+        
+        <!-- Footer -->
+        <footer id="main-footer">
+            <div class="footer-content">
+                <h2>FERRIOLI.EU</h2>
+                <h3>GESTIONALE AD USO INTERNO</h3>
+                <p>Per ulteriore supporto scrivi a <a href="mailto:supporto@ferrioli.eu">supporto@ferrioli.eu</a> oppure contatta il tuo responsabile.</p>
+                <div class="footer-links">
+                    <a href="https://www.ferrioli.eu" target="_blank">www.ferrioli.eu</a> | 
+                    <a href="https://www.cas.ferrioli.eu" target="_blank">www.cas.ferrioli.eu</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Modale per annunci -->
+    <div id="announcement-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 id="announcement-title"></h2>
+            <p id="announcement-message"></p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/appwrite@8.0.0"></script>
+    <script src="js/appwrite.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script src="js/admin.js"></script>
+</body>
+</html>
